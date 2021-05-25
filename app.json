@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Nekkanti_SeaFood",
+    "slug": "Nekkanti_SeaFood",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "sdkVersion": "40.0.0",
+    "icon": "./assets/images/logo.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/toSpl.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "iAssetTracker"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "splash": {
+        "mdpi": "./assets/images/toSpl.png",
+        "hdpi": "./assets/images/toSpl.png",
+        "xhdpi": "./assets/images/toSpl.png",
+        "xxhdpi": "./assets/images/toSpl.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.sahil007.Nekkanti_SeaFood"
+    },
+    "web": {
+      "favicon": "./assets/images/logo.png"
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "nekkanti",
+            "project": "nekkanti",
+            "authToken": "dbb9ed41ce9b4864938c1660f0d9eb510567ebc7c4e24c0fb23c8c96a43333d3"
+          }
+        }
+      ]
+    }
+  }
+}
